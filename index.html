@@ -211,11 +211,12 @@
         </div>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Enter your Name" required>
-            <input type="email" placeholder="Enter your email">
-            <input type="text" placeholder="Enter your subject">
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="793ad631-179f-4d18-93dc-b5ae9de08d3c">
+            <input type="text" name="name" placeholder="Enter your Name" required>
+            <input type="email"name="email" placeholder="Enter your email">
+            <input type="text" name="subject" placeholder="Enter your subject">
+            <textarea name="message" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
             <input type="submit" value="submit" class="send">
         </form>
 
